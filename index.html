@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!-- GitHub Pages project sites live under /REPO-NAME/; without a correct <base>, css/ breaks when the URL has no trailing slash -->
+  <base id="pe-root" href="/" />
+  <script>
+    (function () {
+      var p = location.pathname;
+      var b = document.getElementById("pe-root");
+      if (!b) return;
+      if (p === "/" || p === "") { b.href = "/"; return; }
+      if (p.endsWith("/")) { b.href = p; return; }
+      if (/\.html?$/i.test(p)) { b.href = p.replace(/[^/]+$/, ""); return; }
+      b.href = p + "/";
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="PeakEdge Digital sells premium digital products: AI prompt packs, printable planners, Excel templates, guides, SOPs, content calendars, email swipes, bundles, and more." />
+  <meta name="theme-color" content="#1a365d" />
+  <meta property="og:title" content="PeakEdge Digital — Tools that move you forward" />
+  <meta property="og:description" content="Download-ready planners, templates, prompt packs, and playbooks for professionals and creators." />
+  <meta property="og:type" content="website" />
+  <title>PeakEdge Digital — Tools that move you forward</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="header-inner">
+        <a class="brand" href="#top" id="top">
+          <svg class="brand-mark" width="40" height="40" viewBox="0 0 96 96" aria-hidden="true">
+            <rect width="96" height="96" rx="20" fill="#1A365D"/>
+            <g transform="translate(18,52)" fill="none">
+              <path fill="#2B6CB0" opacity="0.95" d="M0 28 L8 28 L14 12 L20 18 L26 4 L32 14 L38 28 L38 32 L0 32 Z"/>
+              <path fill="#fff" d="M28 28 L34 28 L40 10 L46 16 L52 2 L58 12 L64 28 L64 32 L28 32 Z"/>
+              <circle cx="52" cy="1" r="4" fill="#F6AD55"/>
+            </g>
+          </svg>
+          <div class="brand-text">
+            <strong>PeakEdge</strong>
+            <span>DIGITAL</span>
+          </div>
+        </a>
+        <nav class="nav-desktop" aria-label="Primary">
+          <a href="#catalog">Catalog</a>
+          <a href="#bundles">Bundles</a>
+          <a href="#shops">Stores</a>
+          <a href="#how">How it works</a>
+        </nav>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-mobile" id="nav-btn" aria-label="Open menu">☰</button>
+      </div>
+      <nav class="nav-mobile" id="nav-mobile" aria-label="Mobile">
+        <a href="#catalog">Catalog</a>
+        <a href="#bundles">Bundles</a>
+        <a href="#shops">Stores</a>
+        <a href="#how">How it works</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <p class="hero-eyebrow">Digital product studio</p>
+          <h1>Professional files you can use the same day</h1>
+          <p class="hero-lead">
+            Planners, spreadsheets, prompt packs, SOPs, content calendars, email sequences, and full toolkits —
+            built for people who run businesses, manage teams, or ship content. No filler. Just assets that earn their place on your hard drive.
+          </p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#shops">Where to buy</a>
+            <a class="btn btn-secondary" href="#catalog">See the full catalog</a>
+          </div>
+          <div class="hero-ctas-row2" aria-label="Our stores">
+            <span>Also:</span>
+            <a href="https://peakedge.gumroad.com" rel="noopener noreferrer" target="_blank">Gumroad</a>
+            <a href="https://www.etsy.com/shop/PeakEdgeDigital" rel="noopener noreferrer" target="_blank">Etsy</a>
+            <a href="https://peakedgedigital.lemonsqueezy.com" rel="noopener noreferrer" target="_blank">Lemon Squeezy</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-labelledby="hero-aside-title">
+          <h2 id="hero-aside-title">Why buyers choose us</h2>
+          <ul class="hero-stats">
+            <li>Instant download after checkout on Gumroad, Etsy, or Lemon Squeezy — start in minutes.</li>
+            <li>Niche-aware layouts and copy, not one-size-fits-all templates.</li>
+            <li>Formats you already use: PDF, Excel, and structured packs.</li>
+            <li>New products added as we expand the catalog.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="catalog">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="badge-row">
+            <span class="badge">Core lineup</span>
+            <span class="badge badge-gold">Shipping now &amp; growing</span>
+          </div>
+          <h2>Everything we build and sell</h2>
+          <p>
+            This is the long-term catalog: what’s live today and what we’re adding over time.
+            One static home for every product line — so you always know what we offer.
+          </p>
+        </div>
+
+        <h3 class="subsection-title">Core products</h3>
+        <p class="section-head" style="margin:-1rem 0 1.25rem; max-width:42rem"><span style="color:var(--muted);font-size:0.95rem">High-value digital goods we produce at scale — download, print, or open in your usual tools.</span></p>
+        <ul class="card-grid">
+          <li class="product-card">
+            <div class="icon" aria-hidden="true">PP</div>
+            <h3>AI prompt packs</h3>
+            <p>Curated prompts for ChatGPT, Claude, and similar tools — organized by job: marketing, ops, HR, legal drafting, e-commerce, and more.</p>
+            <p class="product-meta">PDF · Ready to copy-paste</p>
+          </li>
+          <li class="product-card">
+            <div class="icon" aria-hidden="true">PJ</div>
+            <h3>Printable planners &amp; journals</h3>
+            <p>Daily, weekly, and monthly layouts, habit trackers, goal sheets, and niche binders — print at home or use digitally.</p>
+            <p class="product-meta">PDF · Print-ready</p>
+          </li>
+          <li class="product-card">
+            <div class="icon" aria-hidden="true">SS</div>
+            <h3>Spreadsheet templates</h3>
+            <p>Budget trackers, dashboards, ROI calculators, invoices, and business models with formulas and clean structure.</p>
+            <p class="product-meta">Excel / XLSX</p>
+          </li>
+          <li class="product-card">
+            <div class="icon" aria-hidden="true">EB</div>
+            <h3>Ebooks &amp; short guides</h3>
+            <p>Focused playbooks and how-to guides that solve one problem well — frameworks, checklists, and action steps inside.</p>
+            <p class="product-meta">PDF</p>
+          </li>
+          <li class="product-card">
+            <div class="icon" aria-hidden="true">CL</div>
+            <h3>Checklists &amp; SOPs</h3>
+            <p>Step-by-step processes for onboarding, compliance, launches, hospitality, property hosting, and operations.</p>
+            <p class="product-meta">PDF</p>
+          </li>
+          <li class="product-card">
+            <div class="icon" aria-hidden="true">CC</div>
+            <h3>Social content calendars</h3>
+            <p>Multi-week plans with post ideas, hooks, and hashtag sets — built for busy owners and creators.</p>
+            <p class="product-meta">PDF / sheet</p>
+          </li>
+          <li class="product-card">
+            <div class="icon" aria-hidden="true">EM</div>
+            <h3>Email swipes &amp; sequences</h3>
+            <p>Cold outreach, nurture sequences, sales emails, and newsletter frameworks with subject-line patterns that convert.</p>
+            <p class="product-meta">PDF</p>
+          </li>
+        </ul>
+
+        <h3 class="subsection-title">Expanded catalog</h3>
+        <p class="section-head" style="margin:-1rem 0 1.25rem; max-width:42rem"><span style="color:var(--muted);font-size:0.95rem">Higher-touch or visual products — rolling out as we add each line.</span></p>
+        <ul class="card-grid">
+          <li class="product-card">
+            <div class="icon" aria-hidden="true">WA</div>
+            <h3>Printable wall art</h3>
+            <p>Minimal, modern, and seasonal sets — high-resolution files for home, office, or rental spaces.</p>
+            <p class="product-meta">PDF / PNG</p>
+          </li>
+          <li class="product-card">
+            <div class="icon" aria-hidden="true">CB</div>
+            <h3>Coloring books</h3>
+            <p>Themed line-art collections for adults and kids — digital books and print-friendly bundles.</p>
+            <p class="product-meta">PDF</p>
+          </li>
+          <li class="product-card">
+            <div class="icon" aria-hidden="true">MA</div>
+            <h3>Interactive mini-apps</h3>
+            <p>Self-contained HTML tools: calculators, estimators, simulators — open in any browser, no install.</p>
+            <p class="product-meta">HTML bundle</p>
+          </li>
+          <li class="product-card">
+            <div class="icon" aria-hidden="true">TK</div>
+            <h3>Complete business toolkits</h3>
+            <p>Everything in one purchase: spreadsheets + SOPs + emails + onboarding docs, matched to a specific business type.</p>
+            <p class="product-meta">Bundle</p>
+          </li>
+          <li class="product-card">
+            <div class="icon" aria-hidden="true">RS</div>
+            <h3>Resume &amp; career kits</h3>
+            <p>CV and cover letter templates, LinkedIn helpers, and interview prep — tuned by industry where it matters.</p>
+            <p class="product-meta">PDF</p>
+          </li>
+        </ul>
+
+        <h3 class="subsection-title">Roadmap</h3>
+        <p class="section-head" style="margin:-1rem 0 1.25rem; max-width:42rem"><span style="color:var(--muted);font-size:0.95rem">Planned additions — we’ll list each in our stores when it’s ready.</span></p>
+        <ul class="card-grid">
+          <li class="product-card">
+            <div class="icon" aria-hidden="true">SL</div>
+            <h3>Slide decks</h3>
+            <p>Pitch decks, sales decks, and report templates — structured for clarity, not decoration overload.</p>
+            <p class="product-meta">Planned</p>
+          </li>
+          <li class="product-card">
+            <div class="icon" aria-hidden="true">EV</div>
+            <h3>Wedding &amp; event suites</h3>
+            <p>Invitations, RSVPs, and matching stationery — for when design quality has to match the moment.</p>
+            <p class="product-meta">Planned</p>
+          </li>
+          <li class="product-card">
+            <div class="icon" aria-hidden="true">GN</div>
+            <h3>Digital planners (iPad)</h3>
+            <p>Hyperlinked GoodNotes-style planners with tabs and sections for stylus-first workflows.</p>
+            <p class="product-meta">Planned</p>
+          </li>
+          <li class="product-card">
+            <div class="icon" aria-hidden="true">+</div>
+            <h3>Platform templates</h3>
+            <p>Where it makes sense: Canva links, Notion duplicates, and other formats — only when quality allows.</p>
+            <p class="product-meta">Selective</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="bundles">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Bundles &amp; higher-ticket kits</h2>
+          <p>
+            Single products are great starters. Bundles combine complementary files — same niche, one checkout —
+            so you get a complete system instead of scattered downloads.
+          </p>
+        </div>
+        <ul class="steps">
+          <li>
+            <h3>Matched by use case</h3>
+            <p>Planner + spreadsheet + email pack for one role or industry, when we offer a bundle.</p>
+          </li>
+          <li>
+            <h3>Better value</h3>
+            <p>Bundles are priced below buying each item separately — we want repeat buyers, not one-off confusion.</p>
+          </li>
+          <li>
+            <h3>Growing list</h3>
+            <p>Every new product type above can eventually appear in bundles. Check our stores for current sets.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="shops">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Where to buy</h2>
+          <p>
+            We sell through established marketplaces — pick the checkout you prefer. Same catalog philosophy everywhere:
+            practical files, fair pricing, instant or fast delivery depending on the platform.
+          </p>
+        </div>
+        <ul class="shop-grid">
+          <li>
+            <a href="https://peakedge.gumroad.com" rel="noopener noreferrer" target="_blank">
+              Gumroad
+              <span>peakedge.gumroad.com · Direct downloads</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.etsy.com/shop/PeakEdgeDigital" rel="noopener noreferrer" target="_blank">
+              Etsy
+              <span>Shop: PeakEdgeDigital · Discoverability &amp; reviews</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://peakedgedigital.lemonsqueezy.com" rel="noopener noreferrer" target="_blank">
+              Lemon Squeezy
+              <span>peakedgedigital.lemonsqueezy.com · Modern checkout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="how">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p>Simple flow — you check out on the marketplace you choose; we don’t run a separate cart on this site.</p>
+        </div>
+        <ul class="steps">
+          <li>
+            <h3>Pick a product</h3>
+            <p>Choose a pack, planner, template, or bundle on Gumroad, Etsy, or Lemon Squeezy — whatever fits how you like to buy.</p>
+          </li>
+          <li>
+            <h3>Checkout securely</h3>
+            <p>Pay through that platform’s checkout — cards, wallets, and local options depend on the marketplace.</p>
+          </li>
+          <li>
+            <h3>Get your files</h3>
+            <p>Digital goods are delivered per platform rules (instant download, email link, or purchases library). Re-download from your account there anytime.</p>
+          </li>
+        </ul>
+        <p style="margin-top:2rem;text-align:center">
+          <a class="btn btn-dark" href="#shops">Open store list</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap">
+        <h2>Ready when you are</h2>
+        <p>The catalog grows over time — bookmark this page and your favorite store. New drops appear as we ship each line.</p>
+        <div class="cta-shops">
+          <a class="btn btn-primary" href="https://peakedge.gumroad.com" rel="noopener noreferrer" target="_blank">Gumroad</a>
+          <a class="btn btn-primary" href="https://www.etsy.com/shop/PeakEdgeDigital" rel="noopener noreferrer" target="_blank">Etsy</a>
+          <a class="btn btn-primary" href="https://peakedgedigital.lemonsqueezy.com" rel="noopener noreferrer" target="_blank">Lemon Squeezy</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <strong>PeakEdge Digital</strong>
+          <span style="display:block;color:rgba(255,255,255,0.75);font-size:0.9rem;line-height:1.5">Tools that move you forward.<br />Premium digital products for work and creativity.</span>
+        </div>
+        <div>
+          <strong>Shop at</strong>
+          <a href="https://peakedge.gumroad.com" rel="noopener noreferrer" target="_blank">Gumroad</a>
+          <a href="https://www.etsy.com/shop/PeakEdgeDigital" rel="noopener noreferrer" target="_blank">Etsy</a>
+          <a href="https://peakedgedigital.lemonsqueezy.com" rel="noopener noreferrer" target="_blank">Lemon Squeezy</a>
+        </div>
+        <div>
+          <strong>On this page</strong>
+          <a href="#catalog">Full catalog</a>
+          <a href="#bundles">Bundles</a>
+          <a href="#shops">Stores</a>
+          <a href="#how">How it works</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <span id="year"></span> PeakEdge Digital. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    (function () {
+      var btn = document.getElementById("nav-btn");
+      var nav = document.getElementById("nav-mobile");
+      if (!btn || !nav) return;
+      btn.addEventListener("click", function () {
+        var open = nav.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", open);
+        btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      });
+      nav.querySelectorAll("a").forEach(function (a) {
+        a.addEventListener("click", function () {
+          nav.classList.remove("is-open");
+          btn.setAttribute("aria-expanded", "false");
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
